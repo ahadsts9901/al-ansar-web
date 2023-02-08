@@ -143,3 +143,27 @@ hr{
     background-color: rgb(254, 255, 245);
     border: 1px solid rgb(70, 51, 0);
 }
+
+/* services started */
+
+.servicesmain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.services{
+    border: 2px solid rgb(70, 51, 0);
+    width: 40em;
+    padding: 0.5em;
+    margin: 1em;
+}
+
+.services ul li{
+    color: rgb(70, 51, 0) ;
+}
+
+.servicesmargin{
+    margin-top: 10em;
+}
