@@ -4,6 +4,11 @@
     letter-spacing: 0.07em;
 }
 
+m-header, m-home, m-services, m-contact, m-about{
+    display: none;
+}
+
+
 body{
     background-color: rgb(254, 255, 245);
 }
@@ -164,3 +169,39 @@ hr{
     color: rgb(70, 51, 0) ;
 }
 
+.pcenter{
+    line-height: 0.2em;
+}
+
+/* mobile size */
+
+@media only screen and (max-width: 768px) {
+
+    *{
+        font-family: sans-serif ;
+        font-weight: bold;
+        letter-spacing: normal;
+    }
+    
+    body{
+        background-color: rgb(254, 255, 245);
+    }
+    
+    h1, h2, h3, p{
+        color: rgb(70, 51, 0);
+    }
+    
+    .sub{
+        color: rgb(153, 138, 0);
+    }
+
+    hr{
+        border: 1px solid rgb(70, 51, 0);
+    }
+
+    /* display none from desktop */
+    
+    .header, header, nav img, nav ul li, nav ul li a, .container, .container .abouthome, .container img, .contactcontainer, .maincontainer, .peoples a, .adress, .adress a, .servicesmain, .services, .services ul li, .pcenter{
+        display: none;
+    }
+}
