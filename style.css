@@ -4,10 +4,12 @@
     letter-spacing: 0.07em;
 }
 
-m-header, m-home, m-services, m-contact, m-about{
+/* mobile display none */
+.dnone{
     display: none;
 }
 
+/*  */
 
 body{
     background-color: rgb(254, 255, 245);
@@ -76,7 +78,7 @@ nav ul li:hover{
 }
 
 
-hr{
+.d{
     border: 1px solid rgb(70, 51, 0);
 }
 
@@ -185,6 +187,7 @@ hr{
     
     body{
         background-color: rgb(254, 255, 245);
+        font-size: 0.6em;
     }
     
     h1, h2, h3, p{
@@ -195,13 +198,62 @@ hr{
         color: rgb(153, 138, 0);
     }
 
-    hr{
+    .m{
         border: 1px solid rgb(70, 51, 0);
     }
 
     /* display none from desktop */
     
-    .header, header, nav img, nav ul li, nav ul li a, .container, .container .abouthome, .container img, .contactcontainer, .maincontainer, .peoples a, .adress, .adress a, .servicesmain, .services, .services ul li, .pcenter{
+    .header, header, nav img, nav ul li, nav ul li a, .container, .container .abouthome, .container img, .contactcontainer, .maincontainer, .peoples a, .adress, .adress a, .servicesmain, .services, .services ul li, .pcenter, .d{
         display: none;
     }
+
+    .dnone{
+        display: inline;
+    }
+
+    /* mobile css */
+
+    m-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    m-header img{
+        margin: 1em;
+    }
+
+    m-header .burger{
+        margin-right: -4em;
+    }
+
+    m-header ul li{
+        list-style-type: none;
+    }
+
+    m-header ul li a{
+        display: block;
+        color:rgb(254, 255, 245) ;
+        background-color:rgb(70, 51, 0) ;
+        text-decoration: none;
+        padding: 0.5em;
+        text-align: center;
+        width: 6em;
+        margin: 0.4em 0em;
+        margin-right: 2em;
+        display: none;
+        z-index: 20;
+    }
+
+    .burger{
+        border: 0em;
+        background-color: rgb(254, 255, 245) ;
+        padding: 0em;
+    }
+
+    .burger:hover m-header ul li a{
+        display: block;
+    }
+
 }
