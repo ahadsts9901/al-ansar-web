@@ -9,6 +9,10 @@
     display: none;
 }
 
+.m-margin, .m-abouthome, .m-logo img, .m{
+    display: none;
+}
+
 /*  */
 
 body{
@@ -83,7 +87,7 @@ nav ul li:hover{
 }
 
 .container{
-    margin-top:2em;
+    margin-top:5em;
 }
 
 .container{
@@ -232,6 +236,7 @@ nav ul li:hover{
         list-style-type: none;
     }
 
+    /* droplist */
 
     .dropbtn{
         border: 0em;
@@ -270,4 +275,26 @@ nav ul li:hover{
         color:rgb(70, 51, 0) ;
     }
 
+    .m{
+        display: block;
+    }
+
+    /* services */
+
+    .m-margin{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 2em;
+        align-items: center;
+    }
+
+    .m-abouthome{
+        line-height: 2.5em;
+        display: block;
+    }
+
+    .m-logo img{
+        margin-right: 2em;
+        display: block;
+    }
 }
