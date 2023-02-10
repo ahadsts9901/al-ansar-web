@@ -83,7 +83,7 @@ nav ul li:hover{
 }
 
 .container{
-    margin-top:8em;
+    margin-top:2em;
 }
 
 .container{
@@ -232,28 +232,36 @@ nav ul li:hover{
         list-style-type: none;
     }
 
-    m-header ul li a{
-        display: block;
-        color:rgb(254, 255, 245) ;
-        background-color:rgb(70, 51, 0) ;
-        text-decoration: none;
-        padding: 0.5em;
-        text-align: center;
-        width: 6em;
-        margin: 0.4em 0em;
-        margin-right: 2em;
-        display: none;
-        z-index: 20;
-    }
 
-    .burger{
+    .dropbtn{
         border: 0em;
         background-color: rgb(254, 255, 245) ;
         padding: 0em;
     }
 
-    .burger:hover m-header ul li a{
+    .dropdown-content{
         display: block;
-    }
+        background-color:rgb(70, 51, 0) ;
+        padding: 0.5em;
+        text-align:left;
+        width: 6em;
+        margin-right: 3em;
+        margin-left: -4.4em;
+        display: none;
+        position: fixed;
+        font-size: 1.3em;
+        }
+
+      .dropdown-content a{
+        color:rgb(254, 255, 245) ;
+        text-decoration: none;
+        z-index: 20;
+        margin: 1em;
+        line-height: 2em;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
 
 }
