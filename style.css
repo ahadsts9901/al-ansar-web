@@ -240,7 +240,6 @@ nav ul li:hover{
     }
 
     .dropdown-content{
-        display: block;
         background-color:rgb(70, 51, 0) ;
         padding: 0.5em;
         text-align:left;
@@ -250,18 +249,25 @@ nav ul li:hover{
         display: none;
         position: fixed;
         font-size: 1.3em;
-        }
+    }
 
-      .dropdown-content a{
+    .dropdown-content a{
         color:rgb(254, 255, 245) ;
         text-decoration: none;
         z-index: 20;
-        margin: 1em;
+        margin: 0.5em;
         line-height: 2em;
-      }
-
-      .dropdown:hover .dropdown-content {
         display: block;
-      }
+        padding: 0.2em 0.5em;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a:hover{
+        background-color: rgb(254, 255, 245) ;
+        color:rgb(70, 51, 0) ;
+    }
 
 }
