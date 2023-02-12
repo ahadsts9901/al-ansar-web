@@ -306,6 +306,10 @@ nav ul li:hover{
 
     /* services */
 
+    m-services{
+        display: block;
+    }
+
     .m-service-margin{
         display: flex;
         flex-direction: column;
@@ -356,7 +360,7 @@ nav ul li:hover{
         margin-left: 2em;
     }
 
-    m-contact, m-services{
+    m-contact{
         margin-left: 2em;
         align-items: center;
     }
