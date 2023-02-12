@@ -5,7 +5,7 @@
 }
 
 /* mobile display none */
-.dnone, m-contact, m-about{
+.dnone, m-contact, m-about, m-services{
     display: none;
 }
 
@@ -245,6 +245,7 @@ nav ul li:hover{
         top: 0;
         z-index: 10;
         background-color: rgb(254, 255, 245);
+        width: 100%;
     }
 
     m-header img{
@@ -252,7 +253,7 @@ nav ul li:hover{
     }
 
     m-header .burger{
-        margin-right: -4em;
+        margin-right: 1em;
     }
 
     m-header ul li{
@@ -265,6 +266,7 @@ nav ul li:hover{
         border: 0em;
         background-color: rgb(254, 255, 245) ;
         padding: 0em;
+        margin-right: 1em;
     }
 
     .dropdown-content{
@@ -304,6 +306,20 @@ nav ul li:hover{
 
     /* services */
 
+    .m-service-margin{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .m-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -2em;
+    }
+
     .m-margin{
         display: flex;
         justify-content: space-between;
@@ -336,7 +352,11 @@ nav ul li:hover{
         padding: 1em;
     }
 
-    .m-left{
+    .m-left-services{
+        margin-left: 2em;
+    }
+
+    m-contact, m-services{
         margin-left: 2em;
         align-items: center;
     }
@@ -346,7 +366,6 @@ nav ul li:hover{
     }
 
     .m-peoples{
-        border: 2px solid rgb(70, 51, 0);
         width: 23em;
         padding: 2em 2em;
         margin: 2em 0em;
